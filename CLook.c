@@ -9,8 +9,8 @@ int main(){
     for(i=0;i<n;i++) scanf("%d",&RQ[i]);
     printf("Enter initial head position\n");
     scanf("%d",&initial);
-    printf("Enter total disk size\n");
-    scanf("%d",&size);
+    // printf("Enter total disk size\n");
+    // scanf("%d",&size);
     printf("Enter the head movement direction for high 1 and for low 0\n");
     scanf("%d",&move);
   
