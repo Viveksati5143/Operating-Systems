@@ -13,9 +13,9 @@ int main()
     scanf("%d",&size);
     printf("Enter the head movement direction for high 1 and for low 0\n");
     scanf("%d",&move);
-
+    
     for(i=0;i<n;i++){
-        for( j=0;j<n-i-1;j++){
+        for(j=0;j<n-i-1;j++){
             if(RQ[j]>RQ[j+1]){
                 int temp;
                 temp=RQ[j];
@@ -31,15 +31,12 @@ int main()
             break;
         }
     }
-    if(move==1){
+       if(move==1){
         for(i=index;i<n;i++){
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
-        }
-        TotalHeadMoment += abs(size-RQ[i-1]-1);
-        TotalHeadMoment += abs(size-1-0);   //#1 Difference from scan
-        initial=0;
-        for( i=0;i<index;i++){  //#2
+        }        
+        for(i=index-1;i>=0;i--){
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];            
         }
@@ -48,13 +45,10 @@ int main()
         for(i=index-1;i>=0;i--){
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
-        }
-        TotalHeadMoment += abs(RQ[i+1]-0);
-        TotalHeadMoment += abs(size-1-0);   //#3
-        initial =size-1;
-        for(i=n-1;i>=index;i--){    //#4
+        }        
+        for(i=index;i<n;i++){
             TotalHeadMoment += abs(RQ[i]-initial);
-            initial=RQ[i];            
+            initial=RQ[i];      
         }
     }    
     printf("Total head movement is %d",TotalHeadMoment);
