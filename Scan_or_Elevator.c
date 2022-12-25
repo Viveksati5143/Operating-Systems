@@ -5,7 +5,7 @@ int main(){
     printf("Enter the number of Requests\n");
     scanf("%d", &n);
     printf("Enter the Requests sequence\n");
-    for (i = 0; i < n; i++) scanf("%d", &RQ[i]);
+    for(i=0; i<n; i++) scanf("%d", &RQ[i]);
     printf("Enter initial head position\n");
     scanf("%d", &initial);
     printf("Enter total disk size\n");
