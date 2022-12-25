@@ -36,7 +36,7 @@ int main()
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
         }        
-        for( i=0;i<index;i++){
+        for( i=0;i<index;i++){  // #1 difference from Look
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];            
         }
@@ -46,11 +46,10 @@ int main()
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
         }
-        for(i=n-1;i>=index;i--){
+        for(i=n-1;i>=index;i--){    // #2
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];            
         }
     }    
     printf("Total head movement is %d",TotalHeadMoment);
-    return 0;
-}
+    return 0;}

@@ -36,7 +36,7 @@ int main()
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
         }        
-        for(i=index-1;i>=0;i--){
+        for(i=index-1;i>=0;i--){    //#1
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];            
         }
@@ -46,7 +46,7 @@ int main()
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
         }        
-        for(i=index;i<n;i++){
+        for(i=index;i<n;i++){   //#2
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];      
         }
