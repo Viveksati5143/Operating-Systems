@@ -3,7 +3,7 @@
 
 int main()
 {
-    int RQ[100],i,n,TotalHeadMoment=0,initial;
+    int RQ[100], i, n, TotalHeadMoment=0, initial;
     printf("Enter the number of Requests\n");
     scanf("%d",&n);
     printf("Enter the Requests sequence\n");
