@@ -11,7 +11,7 @@ int main()
     printf("Enter initial head position\n");
     scanf("%d",&initial);        
     for(i=0;i<n;i++){
-        TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
+        TotalHeadMoment+=abs(RQ[i]-initial);
         initial=RQ[i];
     }    
     printf("Total head moment is %d",TotalHeadMoment);

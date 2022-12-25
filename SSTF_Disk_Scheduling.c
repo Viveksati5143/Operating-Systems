@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int main()
 {
-    int RQ[100],i,n,TotalHeadMoment=0,initial,count=0;
+    int RQ[100], i, n, TotalHeadMoment=0, initial, count=0;
     printf("Enter the number of Requests\n");
     scanf("%d",&n);
     printf("Enter the Requests sequence\n");
@@ -19,12 +19,11 @@ int main()
                 index=i;
             }
         }
-        TotalHeadMoment=TotalHeadMoment+min;
+        TotalHeadMoment+=min;
         initial=RQ[index];
         RQ[index]=1000;
         count++;
-    }
-    
+    }    
     printf("Total head movement is %d",TotalHeadMoment);
     return 0;
 }
