@@ -15,7 +15,7 @@ int main()
     scanf("%d",&move);
 
     for(i=0;i<n;i++){
-        for( j=0;j<n-i-1;j++){
+        for(j=0;j<n-i-1;j++){
             if(RQ[j]>RQ[j+1]){
                 int temp;
                 temp=RQ[j];

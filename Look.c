@@ -31,7 +31,7 @@ int main()
             break;
         }
     }
-       if(move==1){
+    if(move==1){
         for(i=index;i<n;i++){
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];
