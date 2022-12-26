@@ -39,7 +39,7 @@ int main()
         TotalHeadMoment += abs(size-RQ[i-1]-1);
         TotalHeadMoment += abs(size-1-0);   //#1 Difference from scan
         initial=0;
-        for( i=0;i<index;i++){  //#2
+        for(i=0;i<index;i++){  //#2
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];            
         }
@@ -51,7 +51,7 @@ int main()
         }
         TotalHeadMoment += abs(RQ[i+1]-0);
         TotalHeadMoment += abs(size-1-0);   //#3
-        initial =size-1;
+        initial=size-1;
         for(i=n-1;i>=index;i--){    //#4
             TotalHeadMoment += abs(RQ[i]-initial);
             initial=RQ[i];            
